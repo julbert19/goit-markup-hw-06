@@ -11,123 +11,252 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <a class="part-logo link" href="./index.html" lang="ru">Web<span class="part2-logo">Studio</span>
-        </a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="./index.html">Студия</a>
+      <div class="conteiner header-conteiner">
+        <nav class="header-nav">
+          <div class="logo">
+            <a class="part-logo link" href="./index.html" lang="en"
+              >Web<span class="part2-logo">Studio</span></a
+            >
+          </div>
+
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="link menu-link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a class="accent-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-link link"><a class="menu-link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="menu-contact">
+          <li class="list contact-item">
+            <a class="cotnact-mail link" href="mailto:info@devstudio.com">
+              <svg class="icon-mail" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com<a>
           </li>
-          <li class="menu-item">
-            <a class="accent-link link" href="./portfolio.html">Портфолио</a>
+          <li class="list contact-item">
+            <a class="contact-phone link" href="tel:+380961111111">
+              <svg class="icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Контакты</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li class="menu-item list">
-          <a class="cotnact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="menu-item list">
-          <a class="contact-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
+
     <main>
       <!-- filters -->
-      <section>
-        <h1 hidden>portfolio</h1>
-        <ul class="filters-list">
-          <li class="filters-item list">
-            <button  class="active-btm" type="button">
-                <a class="filters-link link" href=""></a>Все</button>
-          </li>
-          <li class="filters-item list">
-            <button  class="filters-btm" type="button">
-                <a class="filters-link link" href=""></a>Веб-сайты</button>
-          </li>
-          <li class="filters-item list">
-            <button  class="filters-btm" type="button">
-                <a class="filters-link link" href=""></a>Приложения</button>
-          </li>
-          <li class="filters-item list">
-            <button  class="filters-btm" type="button"><a class="filters-link link" href=""></a>Дизайн</button>
-          </li>
-          <li class="filters-item list">
-            <button  class="filters-btm" type="button"><a class="filters-link link" href=""></a>Маркетинг</button>
-          </li>
-        </ul>
-      <section>
+      <section class="section portfolio">
+        <div class="conteiner">
+          <h1 hidden>portfolio</h1>
+          <ul class="filters-list">
+            <li class="filters-item list">
+              <button class="filters-btm" type="button">
+                <a class="filters-link link" href=""></a>Все
+              </button>
+            </li>
+            <li class="filters-item list">
+              <button class="filters-btm" type="button">
+                <a class="filters-link link" href=""></a>Веб-сайты
+              </button>
+            </li>
+            <li class="filters-item list">
+              <button class="filters-btm" type="button">
+                <a class="filters-link link" href=""></a>Приложения
+              </button>
+            </li>
+            <li class="filters-item list">
+              <button class="filters-btm" type="button">
+                <a class="filters-link link" href=""></a>Дизайн
+              </button>
+            </li>
+            <li class="filters-item list">
+              <button class="filters-btm" type="button">
+                <a class="filters-link link" href=""></a>Маркетинг
+              </button>
+            </li>
+          </ul>
           <!-- портфолио -->
-        <ul class="cases-list">
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-1.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Технокряк</h3>
-            <p class="cases-text">Веб-сайт</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
-            <p class="cases-text">Дизайн</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-2.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Ресторан Seafood</h3>
-            <p class="cases-text">Приложение</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-3.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Проект Prime</h3>
-            <p class="cases-text">Маркетинг</p>
-          </li> 
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-8.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Проект Boxes</h3>
-            <p class="cases-text">Приложение</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-4.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Inspiration has no Borders</h3>
-            <p class="cases-text">Веб-сайт</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-5.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Издание Limited Edition</h3>
-            <p class="cases-text">Дизайн</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-6.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Проект LAB</h3>
-            <p class="cases-text">Маркетинг</p>
-          </li>
-          <li class="cases-item list">
-            <img class="cases-img" src="./images/2/img-7.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Growing Business</h3>
-            <p class="cases-text">Приложение</p>
-          </li>
-        </ul>
+          <ul class="cases-list">
+            <li class="cases-item list">
+              <a class="cases-link link" href="">
+                <div class="cases-overlay"> 
+                <img class="cases-img" src="./images/2/img-1.jpg" alt="" width="370"/>
+                <div class="cases-inf">
+                  <p class="cases-inf-text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div></div>
+                  
+                <div class="cases-description">
+                  <h3 class="portfolio-title">Технокряк</h3>
+                  <p class="cases-text">Веб-сайт</p>
+                </div></a>
+            </li>
+            <li class="cases-item list">
+              <a class="cases-link link" href="">
+                <div class="cases-overlay"><img class="cases-img" src="./images/2/img.jpg" alt="" width="370" />
+                <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+                
+              <div class="cases-description">
+                <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
+                <p class="cases-text">Дизайн</p>
+              </div>
+            </li></a>
+
+            <li class="cases-item list">
+              <a class="cases-link link" href="">
+                <div class="cases-overlay"><img class="cases-img" src="./images/2/img-2.jpg" alt="" width="370" />
+                <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+                
+              <div class="cases-description">
+                <h3 class="portfolio-title">Ресторан Seafood</h3>
+                <p class="cases-text">Приложение</p>
+              </div>
+            </li></a>
+            <li class="cases-item list">
+              <a class="cases-link link" href="">
+                <div class="cases-overlay"><img class="cases-img" src="./images/2/img-3.jpg" alt="" width="370" />
+                <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+                
+                <div class="cases-description">
+                <h3 class="portfolio-title">Проект Prime</h3>
+                <p class="cases-text">Маркетинг</p>
+              </div></a>
+            </li>
+
+            <li class="cases-item list"><a class="cases-link link" href="">
+              <div class="cases-overlay"><img class="cases-img" src="./images/2/img-8.jpg" alt="" width="370" />
+              <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+              
+              <div class="cases-description">
+                <h3 class="portfolio-title">Проект Boxes</h3>
+                <p class="cases-text">Приложение</p>
+              </div></a>
+            </li>
+
+            <li class="cases-item list"><a class="cases-link link" href="">
+              <div class="cases-overlay"><img class="cases-img" src="./images/2/img-4.jpg" alt="" width="370" />
+              <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+              
+              <div class="cases-description">
+                <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                <p class="cases-text">Веб-сайт</p>
+              </div></a>
+            </li>
+
+            <li class="cases-item list"><a class="cases-link link" href="">
+              <div class="cases-overlay"><img class="cases-img" src="./images/2/img-5.jpg" alt="" width="370" />
+              <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+              
+              <div class="cases-description">
+                <h3 class="portfolio-title">Издание Limited Edition</h3>
+                <p class="cases-text">Дизайн</p>
+              </div></a>
+            </li>
+
+            <li class="cases-item list"><a class="cases-link link" href="">
+              <div class="cases-overlay"><img class="cases-img" src="./images/2/img-6.jpg" alt="" width="370" />
+              <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+              
+              <div class="cases-description">
+                <h3 class="portfolio-title">Проект LAB</h3>
+                <p class="cases-text">Маркетинг</p>
+              </div></a>
+            </li>
+
+            <li class="cases-item list"><a class="cases-link link" href="">
+              <div class="cses-overlay"><img class="cases-img" src="./images/2/img-7.jpg" alt="" width="370" />
+              <div class="cases-inf">
+                  <p class="cases-inf-text"></p>
+                </div></div>
+              
+              <div class="cases-description">
+                <h3 class="portfolio-title">Growing Business</h3>
+                <p class="cases-text">Приложение</p>
+              </div></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-     <footer class="footer">
-      <a class="part-logo link" href="./index.html" lang="en"
-          >Web <span class="footer-part2-logo">Studio</span>
-      <address class="footer-adress">
-        <ul class="footer-list">
-          <li class="footer-item list">
-            <a class="footer-adress link"href="https://goo.gl/maps/2HoYWXGcDmnkfa8S9">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          </li>
-          <li class="footer-item list">
-            <a class="footer-mail link"href="mailto:info@example.com">info@example.com</a></li>
-          <li class="footer-item list">
-            <a class="footer-phone link"href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+    <!-- ========FOOTER======= -->
+    <footer class="footer">
+      <div class="footer-navigation conteiner">
+        <div class="footer-nav">
+          <div class="footer-logo">
+            <a class="part-logo link" href="./index.html" lang="en"
+              >Web<span class="footer-part2-logo">Studio</span></a
+            >
+          </div>
+
+          <address class="footer-adress">
+            <ul class="footer-list">
+              <li class="footer-item list">
+                <a class="footer-adress link" href="https://goo.gl/maps/2HoYWXGcDmnkfa8S9"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-item list">
+                <a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-item list">
+                <a class="footer-phone link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer-social-title">Присоединяйтесь</h3>
+          <ul class="footer-social-list list">
+            <li class="footer-list">
+              <a href="" class="footer-icons"
+                ><svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a href="" class="footer-icons"
+                ><svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a href="" class="footer-icons"
+                ><svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a href="" class="footer-icons"
+                ><svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
