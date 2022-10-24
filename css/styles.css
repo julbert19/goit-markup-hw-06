@@ -1,0 +1,198 @@
+:root{
+    --accent-color:#2196F3;
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --second-accent-color:#FFFFFF;
+    --background-color: #2F303A;
+    --srcond-background-color: #F5F4FA;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    letter-spacing: 0.03em;
+}
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+.accent-link{
+    color: var(--accent-color);
+    font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+}
+
+
+/* header */
+.part-logo{
+    font-family: 'Raleway',sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--accent-color)
+}
+.part2-logo{
+    color: var(--primary-color);
+}
+.footer-part2-logo{
+    color: var(--second-accent-color);
+}
+.menu-link{
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color);
+}
+.cotnact-mail,
+.contact-phone {
+    
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        color: var(--secondary-color);
+}
+.contact-phone:hover,
+.contact-phone:focus{
+    color: var(--accent-color);
+}
+.cotnact-mail:hover,
+.cotnact-mail:focus{
+color: var(--accent-color);
+}
+.hero{
+    background: var(--background-color);
+}
+.hero-title{
+    
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--second-accent-color);
+        
+}
+.hero-btm{
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: var(--second-accent-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+}
+
+.benefits-title{
+    
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+}
+.benefits-text{
+        line-height: 1.71;
+    
+        color: var(--secondary-color);
+}
+.section-title{
+    
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+}
+.team{
+    background: var(--srcond-background-color);
+}
+.team-title{
+  
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+    
+}
+.team-text  {
+   
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        color: var(--secondary-color);
+}
+.footer{
+    background: var(--background-color);
+}
+.footer-adress,
+.footer-mail,
+.footer-phone {
+    
+    font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--second-accent-color);
+}
+.footer-mail,
+.footer-phone {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail:hover,
+.footer-mail:focus {
+    color: var(--accent-color);
+}
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--accent-color);
+}
+/* ПОРТФОЛИО */
+.filters-btm{
+    
+        font-weight: 500;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        cursor: pointer;
+}
+.filters-btm:hover,
+.filters-btm:focus{
+    background: var(--accent-color);
+    color: var(--second-accent-color);   
+}
+.active-btm{
+    background-color: var(--accent-color);
+    stop-color: var(--second-accent-color);
+    font-weight: 500;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        cursor: pointer;
+}
+.portfolio-title{
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    
+        color: var(--primary-color);
+}
+.cases-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        color: var(--secondary-color);
+}
