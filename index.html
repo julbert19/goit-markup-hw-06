@@ -313,6 +313,7 @@
     <!-- ========FOOTER======= -->
     <footer class="footer">
       <div class="footer-navigation conteiner">
+        <!-- навигация  -->
         <div class="footer-nav">
           <div class="footer-logo">
             <a class="part-logo link" href="./index.html" lang="en"
@@ -336,8 +337,9 @@
             </ul>
           </address>
         </div>
+        <!-- соцсети -->
         <div class="footer-social">
-          <h3 class="footer-social-title">Присоединяйтесь</h3>
+          <p class="footer-social-title">Присоединяйтесь</p>
           <ul class="footer-social-list list">
             <li class="footer-list">
               <a href="" class="footer-icons"
@@ -365,8 +367,22 @@
             </li>
           </ul>
         </div>
+        <!-- subscription -->
+        <div class="subscrip">
+          <p class="subscrip-text">Подпишитесь на рассылку</p>
+          <form class="subscrip-box">
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <button class="subscrip-button button" type="submit">
+              Подписаться
+              <svg class="subsc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-2"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-button button" type="button">
@@ -374,6 +390,35 @@
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
+        <div class="modal-form">
+          <p class="form-title">Оставьте свои даннные, мы вам перезвоним</p>
+
+          <form action="">
+            <label for="">
+              <span>Имя</span>
+              <input type="text" />
+            </label>
+
+            <label for="">
+              <span>Телефон</span>
+              <input type="tel" name="" id="" />
+            </label>
+
+            <label for="">
+              <span>Почта</span>
+              <input type="email" name="" id="" />
+            </label>
+
+            <label for=""> <span>Комментарий</span></label>
+            <textarea></textarea>
+
+            <input for="checkbox" type="checkbox" />
+            <label id="checkbox" for=""
+              >Соглашаюсь с рассылкой и принимаю <a class="link" href="">Условия договора</a>
+            </label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

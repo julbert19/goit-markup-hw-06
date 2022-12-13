@@ -294,6 +294,9 @@ color: var(--accent-color);
 }
 .wedo-inf{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 0%;
     height: 70px;
     width: 100%;
@@ -306,7 +309,7 @@ font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
 color: var(--second-accent-color);
-margin-top: 27px;
+
 
 }
 /* ========team====== */
@@ -463,11 +466,14 @@ display: flex;
 .footer-adress:focus {
     color: var(--accent-color);
 }
+.footer-social{
+    margin-right: 70px;
+}
 
 .footer-social-title{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.18;
     color: var(--second-accent-color);
         margin-bottom: 20px;
@@ -490,8 +496,8 @@ display: flex;
     fill: #FFFFFF;
 
     transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons:hover,
 .footer-icons:focus{
@@ -536,9 +542,7 @@ display: flex;
     gap: 30px;
 }
 .cases-link{
-    
     flex-basis: calc(( 100% - 60px) / 3 );
-    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -611,6 +615,12 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -641,7 +651,71 @@ overflow: hidden;
 }
 .modal-icon{
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
     fill: rgba(0, 0, 0, 1);
+}
+
+.modal-form{
+    margin-top: 50px;
+}
+
+/* subscription  */
+.subscrip{  
+    display: block;
+}
+.subscrip-box{
+    display: flex;
+}
+.subscrip-box input{
+    padding: 15px;
+    width: 357px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+.subscrip-box input::placeholder{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.subscrip-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--second-accent-color);
+}
+.subscrip-button{
+    display: flex;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+    
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    
+        letter-spacing: 0.06em;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 32px;
+        box-shadow: 0px,
+            4px rgba(0, 0, 0, 0.15);
+    
+        color: var(--second-accent-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+        margin-left: 14px;
+}
+.subsc-icon{
+    margin-left: 10px;  
 }
