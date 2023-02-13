@@ -103,7 +103,8 @@ img{
     margin-right: 93px;
 }
 .part-logo{
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', normal;
+    text-transform: uppercase;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -112,13 +113,16 @@ img{
 }
 .footer-logo{
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .part2-logo{
     color: var(--dark);
+    text-transform: uppercase;
 }
 
 .footer-part2-logo{
     color: var(--light);
+    text-transform: uppercase;
 }
 .menu-link{
         font-weight: 500;
@@ -422,52 +426,27 @@ display: flex;
 .footer-item{
     margin-bottom: 9px;
 }
-
-.footer-adress,
-.footer-mail,
-.footer-phone {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--second-accent-color);
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-mail,
-.footer-phone {
-    color: rgba(255, 255, 255, 0.6);
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
-.footer-mail:hover,
-.footer-mail:focus {
-    color: var(--accent-color);
-}
-.footer-phone:hover,
-.footer-phone:focus {
-    color: var(--accent-color);
-}
-.footer-adress:hover,
-.footer-adress:focus {
-    color: var(--accent-color);
+.footer-adress{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--accent);
 }
 .footer-social{
     margin-right: 70px;
 }
 
 .footer-social-title{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.18;
-    color: var(--second-accent-color);
-        margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--second-text);
+    margin-bottom: 20px;
 }
 .footer-social-list{
     display: flex;
@@ -480,11 +459,11 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgba(255, 255, 255, 0.1);
-    height: 44px;
-    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    fill: #FFFFFF;
+    fill: var(--light);
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -492,7 +471,7 @@ display: flex;
 }
 .footer-icons:hover,
 .footer-icons:focus{
-    background-color:#2196F3;
+    background-color:var(--success);
 }
 /* ПОРТФОЛИО */
 
@@ -683,19 +662,20 @@ overflow: hidden;
 }
 
 .subscrip-text{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     margin-bottom: 20px;
-    color: var(--second-accent-color);
+    color: var(--second-text);
 }
 .subscrip-button{
     display: flex;
     font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
+    font-size: 16px;
+    line-height: 1.88;
     
         text-align: center;
         align-items: center;
@@ -705,14 +685,22 @@ overflow: hidden;
         border: none;
         border-radius: 4px;
         padding: 10px 32px;
-        box-shadow: 0px,
-            4px rgba(0, 0, 0, 0.15);
-    
-        color: var(--second-accent-color);
-        background-color: var(--accent-color);
+        color: var(--second-text);
+        background-color: var(--primary-brand);
         cursor: pointer;
         margin-left: 14px;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+.subscrip-button:hover,
+.subscrip-button:focus {
+    background-color: var(--pressed-state);
 }
+
+
 .subsc-icon{
     margin-left: 10px;  
 }
