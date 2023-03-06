@@ -622,7 +622,36 @@ display: flex;
     display: flex;
     flex-direction: column;
 }
+.modal-text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8E8F99;
+        margin-bottom: 4px;
+}
+.modal-group{
+    position: absolute;
+}
+.modal-input{
+    width: 360px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus,
+.modal-input:hover{
+    border: 1px solid #4D5AE5;
+}
+.modal-svg{
+position: absolute;
+   top: 8px;
+   left: 16px;
 
+}
 .send-button{
         text-align: center;
         align-items: baseline;
